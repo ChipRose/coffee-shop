@@ -53,5 +53,8 @@
   "engines": {
     "node": ">=16.13.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "gulp-rename": "^2.0.0"
+  }
 }
