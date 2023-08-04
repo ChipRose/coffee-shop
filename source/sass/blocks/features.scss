@@ -1,0 +1,24 @@
+.features {
+  background: var(--cl-base-contrast);
+}
+
+.features__container {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.features__badge {
+  margin-bottom: 4px;
+}
+
+.features__title {
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
+}

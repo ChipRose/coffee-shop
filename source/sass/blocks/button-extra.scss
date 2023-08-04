@@ -1,0 +1,28 @@
+.button-extra {
+  padding: var(--el-extra-indent) var(--el-main-indent);
+  display: block;
+  width: fit-content;
+  background: var(--cl-base-contrast);
+  border-radius: 4px;
+  transition: var(--el-transition);
+
+  @include set-font-style(var(-fz-regular-text-big), var(-lh-regular-text-big));
+  color: var(--cl-base-primary);
+  text-align: center;
+
+  &:focus, &:hover, &:active, &:disabled {
+    color: var(--cl-base-contrast);
+  }
+
+  &:focus, &:hover {
+    background: var(--cl-lighter-primary);
+  }
+
+  &:active {
+    background: var(--cl-darker-primary);
+  }
+
+  &:disabled {
+    background: var(--cl-light-middle);
+  }
+}

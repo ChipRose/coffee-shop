@@ -8,14 +8,13 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.min.css">
   <!-- Fonts -->
-  <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous">
 </head>
 
-<body class="page__body">
+<body class="body page__body">
   <header class="header">
     <div class="container header__wrapper">
       <a class="logo header__logo" href="#">
@@ -26,7 +25,8 @@
         </picture>
       </a>
       <nav class="navigation navigation--nojs navigation--closed header__menu">
-        <button class="navigation__toggle" type="button" aria-expanded="false" aria-controls="navigation-list">
+        <button class="navigation__toggle header__burger" type="button" aria-expanded="false"
+          aria-controls="navigation-list">
           <span class="visually-hidden">Открыть меню </span>
         </button>
         <ul class="navigation__list" id="navigation-list">
@@ -94,7 +94,7 @@
             </div>
             <div class="slider__info">
               <div class="slider__text-block">
-                <h2 class="title-label">
+                <h2 class="title-badge">
                   Новинка!
                 </h2>
                 <h3 class="visually-hidden">
@@ -135,7 +135,7 @@
             </div>
             <div class="slider__info">
               <div class="slider__text-block">
-                <h2 class="title-label">
+                <h2 class="title-badge">
                   Новинка!
                 </h2>
                 <h3 class="visually-hidden">
@@ -177,7 +177,7 @@
             </div>
             <div class="slider__info">
               <div class="slider__text-block">
-                <h2 class="title-label">
+                <h2 class="title-badge">
                   Новинка!
                 </h2>
                 <h3 class="visually-hidden">
@@ -204,70 +204,70 @@
       </div>
     </section>
     <section class="features">
-      <div class="container">
-        <h2 class="title-label">
+      <div class="container features__container">
+        <p class="title-badge features__badge">
           Преимущества
-        </h2>
-        <h3 class="title">
+        </p>
+        <h2 class="title features__title">
           Главные причины выбрать Drink2Go
-        </h3>
-        <ul class="feature__list">
-          <li class="feature__item">
-            <div class="feature__image-block">
+        </h2>
+        <ul class="features-list">
+          <li class="features-list__item feature-card">
+            <div class="feature-card__image-block">
               <svg width="52" height="56" role="img" aria-label="Часы" focusable="false">
                 <use xlink:href="img/icons/stack.svg#speed-icon" />
               </svg>
             </div>
-            <div class="feature__text-block">
-              <h4 class="title title--section">
+            <div class="feature-card__text-block">
+              <h3 class="feature-card__title">
                 Скорость
-              </h4>
-              <p class="text-basic">
+              </h3>
+              <p>
                 Готовый напиток всегда под рукой — просто открой банку
               </p>
             </div>
           </li>
-          <li class="feature__item">
-            <div class="feature__image-block">
-              <svg width="52" height="56" role="img" aria-label="Часы" focusable="false">
-                <use xlink:href="img/icons/stack.svg#speed-icon" />
+          <li class="features-list__item feature-card">
+            <div class="feature-card__image-block">
+              <svg width="52" height="56" role="img" aria-label="Карман" focusable="false">
+                <use xlink:href="img/icons/stack.svg#comfort-icon" />
               </svg>
             </div>
-            <div class="feature__text-block">
-              <h4 class="title title--section">
+            <div class="feature-card__text-block">
+              <h3 class="feature-card__title">
                 Удобство
-              </h4>
-              <p class="text-basic">
+              </h3>
+              <p>
                 Легко помещается и в карман, и в маленькую сумочку
               </p>
             </div>
           </li>
-          <li class="feature__item">
-            <div class="feature__image-block">
-              <svg width="52" height="56" role="img" aria-label="Часы" focusable="false">
-                <use xlink:href="img/icons/stack.svg#speed-icon" />
+          <li class="features-list__item feature-card">
+            <div class="feature-card__image-block">
+              <svg width="52" height="56" role="img" aria-label="Молния" focusable="false">
+                <use xlink:href="img/icons/stack.svg#alertness-icon" />
               </svg>
             </div>
-            <div class="feature__text-block">
-              <h4 class="title title--section">
+            <div class="feature-card__text-block">
+              <h3 class="feature-card__title">
                 Бодрость
-              </h4>
-              <p class="text-basic">
+              </h3>
+              <p>
                 Сбалансированная доза кофеина даст мощный заряд энергии
               </p>
             </div>
           </li>
-          <li class="feature__item">
-            <div class="feature__image-block">
-              <svg width="52" height="56" role="img" aria-label="Часы" focusable="false">
-                <use xlink:href="img/icons/stack.svg#speed-icon" />
+          <li class="features-list__item feature-card">
+            <div class="feature-card__image-block">
+              <svg width="52" height="56" role="img" aria-label="Листик" focusable="false">
+                <use xlink:href="img/icons/stack.svg#eco-icon" />
               </svg>
             </div>
-            <div class="feature__text-block">
-              <h4 class="title title--section">
+            <div class="feature-card__text-block">
+              <h3 class="feature-card__title">
                 Экологичность
-              </h4>
-              <p class="text-basic">
+              </h3>
+              <p>
                 Вся упаковка сделана из перерабатываемых материалов
               </p>
             </div>
@@ -277,15 +277,15 @@
     </section>
     <section class="products">
       <div class="container">
-        <h2 class="title-label">
+        <p class="title-badge">
           Каталог
-        </h2>
-        <h3 class="title">
+        </p>
+        <h2 class="title">
           Каталог кофейных напитков
-        </h3>
+        </h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="filter__price">
-            <h4 class="title-sort-filter">Цена</h4>
+            <h3 class="title-sort-filter">Цена</h3>
             <div id="price-range"></div>
             <p class="filter__price-range">
               <input class="filter__price" type="text" name="min-price" id="min-price" pattern="[0-9]{,3}">
@@ -293,9 +293,9 @@
             </p>
           </fieldset>
           <fieldset class="filter__product-content">
-            <h4 class="title-sort-filter">
+            <h3 class="title-sort-filter">
               Наличие молока
-            </h4>
+            </h3>
             <label class="filter__item product-property">
               <input class="visually-hidden" type="radio" name="product-property" value="no-matter" checked />
               <span class="product-property__name">Неважно</span>
@@ -314,9 +314,9 @@
             </label>
           </fieldset>
           <fieldset class="filter__country">
-            <h4 class="title-sort-filter">
+            <h3 class="title-sort-filter">
               Страна произрастания
-            </h4>
+            </h3>
             <label class="filter__item product-country">
               <input class="visually-hidden" type="checkbox" name="brasil" value="brasil" checked />
               <span class="product-property__name">Бразилия</span>
@@ -364,7 +364,7 @@
           <ul class="catalog__list">
             <li class="catalog__item product-card">
               <div class="product-card__image-block">
-                <a class="link" href="blank.html" title="Перейти в карточку товара">
+                <a href="blank.html" title="Перейти в карточку товара">
                   <picture>
                     <source type="image/webp"
                       srcset="img/catalog/coffee-can-white.webp 1x, img/catalog/coffee-can-white@2x.webp 2x">
@@ -374,22 +374,23 @@
                 </a>
               </div>
               <div class="product-card__text-block">
-                <h4 class="title title--section">
+                <h3 class="title title--section">
                   <a href="blank.html" title="Перейти в карточку товара">
                     Декаф Флэт Уайт
                   </a>
-                </h4>
+                </h3>
                 <p class="text-basic">
                   Кофе без кофеина из Эфиопии с натуральным фермерским молоком
                 </p>
               </div>
               <div class="product-card__price-block price-block">
                 <span class="price-block__new-price new-price">225₽</span>
-                <a href="blank.html" class="button-basic">
-                  <svg width="20" height="16" role="img" aria-label="Корзина" focusable="false">
+                <a href="blank.html" class="button-basic button-basic--catalog">
+                  <svg class="basic-button__icon" width="20" height="16" role="img" aria-label="Корзина"
+                    focusable="false">
                     <use xlink:href="img/icons/stack.svg#add-cart-icon" />
                   </svg>
-                  <span class="basic-button__label">
+                  <span>
                     В корзину
                   </span>
                 </a>
@@ -397,7 +398,7 @@
             </li>
             <li class="catalog__item product-card">
               <div class="product-card__image-block">
-                <a class="link" href="blank.html" title="Перейти в карточку товара">
+                <a href="blank.html" title="Перейти в карточку товара">
                   <picture>
                     <source type="image/webp"
                       srcset="img/catalog/coffee-can-violet.webp 1x, img/catalog/coffee-can-violet@2x.webp 2x">
@@ -407,22 +408,23 @@
                 </a>
               </div>
               <div class="product-card__text-block">
-                <h4 class="title title--section">
+                <h3 class="title title--section">
                   <a href="blank.html" title="Перейти в карточку товара">
                     Декаф Флэт Уайт
                   </a>
-                </h4>
+                </h3>
                 <p class="text-basic">
                   Кофе без кофеина из Эфиопии с натуральным фермерским молоком
                 </p>
               </div>
               <div class="product-card__price-block price-block">
                 <span class="price-block__new-price new-price">225₽</span>
-                <a href="blank.html" class="button-basic">
-                  <svg width="20" height="16" role="img" aria-label="Корзина" focusable="false">
+                <a href="blank.html" class="button-basic button-basic--catalog">
+                  <svg class="basic-button__icon" width="20" height="16" role="img" aria-label="Корзина"
+                    focusable="false">
                     <use xlink:href="img/icons/stack.svg#add-cart-icon" />
                   </svg>
-                  <span class="basic-button__label">
+                  <span>
                     В корзину
                   </span>
                 </a>
@@ -440,22 +442,23 @@
                 </a>
               </div>
               <div class="product-card__text-block">
-                <h4 class="title title--section">
+                <h3 class="title title--section">
                   <a href="blank.html" title="Перейти в карточку товара">
                     Декаф Флэт Уайт
                   </a>
-                </h4>
+                </h3>
                 <p class="text-basic">
                   Кофе без кофеина из Эфиопии с натуральным фермерским молоком
                 </p>
               </div>
               <div class="product-card__price-block price-block">
                 <span class="price-block__new-price new-price">225₽</span>
-                <a href="blank.html" class="button-basic">
-                  <svg width="20" height="16" role="img" aria-label="Корзина" focusable="false">
+                <a href="blank.html" class="button-basic button-basic--catalog">
+                  <svg class="basic-button__icon" width="20" height="16" role="img" aria-label="Корзина"
+                    focusable="false">
                     <use xlink:href="img/icons/stack.svg#add-cart-icon" />
                   </svg>
-                  <span class="basic-button__label">
+                  <span>
                     В корзину
                   </span>
                 </a>
@@ -505,12 +508,9 @@
             srcset="img/map/map_big.webp 1x, img/map/map_big@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
             srcset="img/map/map_middle.webp 1x, img/map/map_middle@2x.webp 2x">
-          <source type="image/webp"
-            srcset="img/map/map_small.webp 1x, img/map/map_small@2x.webp 2x">
-          <source media="(min-width: 1440px)"
-            srcset="img/map/map_big.png 1x, img/map/map_big@2x.png 2x">
-          <source media="(min-width: 768px)"
-            srcset="img/map/map_middle.png 1x, img/map/map_middle@2x.png 2x">
+          <source type="image/webp" srcset="img/map/map_small.webp 1x, img/map/map_small@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/map/map_big.png 1x, img/map/map_big@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map/map_middle.png 1x, img/map/map_middle@2x.png 2x">
           <img src="img/map/map_small.png" srcset="img/map/map_small@2x.png 2x"
             alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" />
         </picture>
@@ -529,21 +529,24 @@
         <ul class="social__list social-block">
           <li class="social-block__item">
             <a href="#" class="social-block__link">
-              <svg class="social-block__icon" width="20" height="20" role="img" aria-label="ВКонтакте" focusable="false">
+              <svg class="social-block__icon" width="20" height="20" role="img" aria-label="ВКонтакте"
+                focusable="false">
                 <use xlink:href="img/icons/stack.svg#vk-icon" />
               </svg>
             </a>
           </li>
           <li class="social-block__item">
             <a href="#" class="social-block__link">
-              <svg class="social-block__icon" width="20" height="20" role="img" aria-label="Pinterest" focusable="false">
+              <svg class="social-block__icon" width="20" height="20" role="img" aria-label="Pinterest"
+                focusable="false">
                 <use xlink:href="img/icons/stack.svg#pinterest-icon" />
               </svg>
             </a>
           </li>
           <li class="social-block__item">
             <a href="#" class="social-block__link">
-              <svg class="social-block__icon" width="20" height="20" role="img" aria-label="Pinterest" focusable="false">
+              <svg class="social-block__icon" width="20" height="20" role="img" aria-label="Pinterest"
+                focusable="false">
                 <use xlink:href="img/icons/stack.svg#ok-icon" />
               </svg>
             </a>

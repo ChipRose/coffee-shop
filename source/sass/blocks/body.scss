@@ -1,0 +1,14 @@
+.body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr min-content;
+
+  @include set-font-style(var(--fz-regular-text-small), var(--lh-regular-text-small));
+  background-color: var(--cl-lightest-middle);
+  color: var(--cl-base-main);
+
+  @media (min-width: $tablet-width) {
+    @include set-font-style(var(--fz-regular-text-big), var(--lh-regular-text-big));
+
+  }
+}

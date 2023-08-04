@@ -1,8 +1,30 @@
 /* GLOBAL */
-@import "global/normalize.scss";
+@import "global/normalize";
 @import "global/variables";
 @import "global/global";
 @import "global/fonts";
+@import "global/fonts-size";
+@import "global/visually-hidden";
+@import "global/colors";
+@import "global/style-components";
+@import "global/mixin";
 
 /* BLOCKS */
+@import "blocks/page";
+@import "blocks/body";
+@import "blocks/container";
 @import "blocks/header";
+@import "blocks/features";
+
+/* STRUCTURE BLOCKS */
+@import "blocks/features-list";
+@import "blocks/feature-card";
+@import "blocks/title-badge";
+@import "blocks/title";
+
+/* BUTTONS */
+@import "blocks/button-basic";
+@import "blocks/button-extra";
+
+
+

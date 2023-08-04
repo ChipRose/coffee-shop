@@ -1,0 +1,36 @@
+.button-basic {
+  padding: var(--el-extra-indent) var(--el-main-indent);
+  display: block;
+  width: fit-content;
+  background: var(--cl-base-primary);
+  border-radius: 4px;
+  transition: var(--el-transition);
+
+  @include set-font-style(var(-fz-regular-text-big), var(-lh-regular-text-big));
+  color: var(--cl-base-contrast);
+  text-align: center;
+
+  &--catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    @include set-font-style(var(--fz-small-text), var(--lh-small-text));
+  }
+
+  &:hover, &:focus {
+    background: var(--cl-lighter-primary);
+  }
+
+  &:active {
+    background: var(--cl-darker-primary);
+  }
+
+  &:disabled {
+    background: var(--cl-base-middle);
+  }
+}
+
+.basic-button__icon {
+  margin-right: 6px;
+}

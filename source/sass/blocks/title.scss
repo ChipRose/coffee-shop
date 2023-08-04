@@ -1,0 +1,8 @@
+.title {
+  @include set-font-style(var(--fz-title-small), var(--lh-title-small), "Montserrat", var(--fw-bold));
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include set-font-style(var(--fz-title-big), var(--lh-title-big), "Montserrat", var(--fw-bold));
+  }
+}
