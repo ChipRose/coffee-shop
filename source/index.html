@@ -72,7 +72,7 @@
   </header>
   <main class="main">
     <h1 class="visually-hidden">Drink2Go — это интернет-магазин по продаже кофейных напитков. </h1>
-    <section class="slider">
+    <!-- <section class="slider">
       <div class="container">
         <ul class="slider__list">
           <li class="slider__item">
@@ -202,7 +202,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <section class="features">
       <div class="container features__container">
         <p class="title-badge features__badge">
@@ -289,6 +289,7 @@
             <div id="price-range"></div>
             <p class="filter__price-range">
               <input class="filter__price" type="text" name="min-price" id="min-price" pattern="[0-9]{,3}">
+              -
               <input class="filter__price" type="text" name="max-price" id="max-price" pattern="[0-9]{,3}">
             </p>
           </fieldset>
@@ -296,21 +297,21 @@
             <h3 class="title-sort-filter">
               Наличие молока
             </h3>
-            <label class="filter__item product-property">
-              <input class="visually-hidden" type="radio" name="product-property" value="no-matter" checked />
-              <span class="product-property__name">Неважно</span>
+            <label class="filter__item radio-item">
+              <input class="visually-hidden radio-item__button" type="radio" name="product-property" value="no-matter" checked />
+              <span class="radio-item__label">Неважно</span>
             </label>
-            <label class="filter__item product-property">
-              <input class="visually-hidden" type="radio" name="product-property" value="animal-milk-only" checked />
-              <span class="product-property__name">Только животное</span>
+            <label class="filter__item radio-item">
+              <input class="visually-hidden radio-item__button" type="radio" name="product-property" value="animal-milk-only" />
+              <span class="radio-item__label">Только животное</span>
             </label>
-            <label class="filter__item product-property">
-              <input class="visually-hidden" type="radio" name="product-property" value="plant-milk-only" />
-              <span class="product-property__name">Только растительное</span>
+            <label class="filter__item radio-item">
+              <input class="visually-hidden radio-item__button" type="radio" name="product-property" value="plant-milk-only" />
+              <span class="radio-item__label">Только растительное</span>
             </label>
-            <label class="filter__item product-property">
-              <input class="visually-hidden" type="radio" name="product-property" value="no-milk" disabled />
-              <span class="product-property__name">Без молока</span>
+            <label class="filter__item radio-item">
+              <input class="visually-hidden radio-item__button" type="radio" name="product-property" value="no-milk" disabled/>
+              <span class="radio-item__label">Без молока</span>
             </label>
           </fieldset>
           <fieldset class="filter__country">
