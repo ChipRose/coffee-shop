@@ -1,0 +1,11 @@
+.product-text-block__title{
+  margin-bottom: 4px;
+
+  a {
+    color: inherit;
+  }
+}
+
+.product-text-block__description {
+  @include set-font-style(var(--fz-small-text),(--lh-small-text));
+}

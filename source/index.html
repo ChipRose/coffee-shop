@@ -363,22 +363,24 @@
             </button>
           </div>
         </form>
-        <div class="sort">
-          <label class="sort__item">
-            <select>
-              <option value="default">по умолчанию</option>
-              <option value="expencive-first">сначала дорогие</option>
-              <option value="cheap-first">сначала дешёвые</option>
-              <option value="hight-rating">высокий рейтинг</option>
-            </select>
-            <span class="title-sort-filter">
+        <div class="sort products__sort">
+          <label class="sort-item">
+            <div class="sort-item__select">
+              <select class="sort-item__field">
+                <option class="sort-item__option" value="default">по умолчанию</option>
+                <option class="sort-item__option" value="expencive-first">сначала дорогие</option>
+                <option class="sort-item__option" value="cheap-first">сначала дешёвые</option>
+                <option class="sort-item__option" value="hight-rating">высокий рейтинг</option>
+              </select>
+            </div>
+            <span class="title-sort-filter sort-item__label">
               Сортировка:
             </span>
           </label>
         </div>
-        <div class="catalog">
-          <ul class="catalog__list">
-            <li class="catalog__item product-card">
+        <div class="catalog products__catalog">
+          <ul class="catalog-list">
+            <li class="product-card catalog-list__item ">
               <div class="product-card__image-block">
                 <a href="blank.html" title="Перейти в карточку товара">
                   <picture>
@@ -389,17 +391,17 @@
                   </picture>
                 </a>
               </div>
-              <div class="product-card__text-block">
-                <h3 class="title title--section">
+              <div class="product-text-block product-card__text-block">
+                <h3 class="title product-text-block__title">
                   <a href="blank.html" title="Перейти в карточку товара">
                     Декаф Флэт Уайт
                   </a>
                 </h3>
-                <p class="text-basic">
+                <p class="product-text-block__description">
                   Кофе без кофеина из Эфиопии с натуральным фермерским молоком
                 </p>
               </div>
-              <div class="product-card__price-block price-block">
+              <div class="price-block product-card__price-block">
                 <span class="price-block__new-price new-price">225₽</span>
                 <a href="blank.html" class="button-basic button-basic--catalog">
                   <svg class="basic-button__icon" width="20" height="16" role="img" aria-label="Корзина"
@@ -412,7 +414,7 @@
                 </a>
               </div>
             </li>
-            <li class="catalog__item product-card">
+            <li class="product-card catalog-list__item">
               <div class="product-card__image-block">
                 <a href="blank.html" title="Перейти в карточку товара">
                   <picture>
@@ -423,17 +425,17 @@
                   </picture>
                 </a>
               </div>
-              <div class="product-card__text-block">
-                <h3 class="title title--section">
+              <div class="product-text-block product-card__text-block">
+                <h3 class="title product-text-block__title">
                   <a href="blank.html" title="Перейти в карточку товара">
                     Декаф Флэт Уайт
                   </a>
                 </h3>
-                <p class="text-basic">
+                <p class="product-text-block__description">
                   Кофе без кофеина из Эфиопии с натуральным фермерским молоком
                 </p>
               </div>
-              <div class="product-card__price-block price-block">
+              <div class="price-block product-card__price-block">
                 <span class="price-block__new-price new-price">225₽</span>
                 <a href="blank.html" class="button-basic button-basic--catalog">
                   <svg class="basic-button__icon" width="20" height="16" role="img" aria-label="Корзина"
@@ -446,7 +448,7 @@
                 </a>
               </div>
             </li>
-            <li class="catalog__item product-card">
+            <li class="product-card catalog-list__item">
               <div class="product-card__image-block">
                 <a class="link" href="blank.html" title="Перейти в карточку товара">
                   <picture>
@@ -457,17 +459,17 @@
                   </picture>
                 </a>
               </div>
-              <div class="product-card__text-block">
-                <h3 class="title title--section">
+              <div class="product-text-block product-card__text-block">
+                <h3 class="title product-text-block__title">
                   <a href="blank.html" title="Перейти в карточку товара">
                     Декаф Флэт Уайт
                   </a>
                 </h3>
-                <p class="text-basic">
+                <p class="product-text-block__description">
                   Кофе без кофеина из Эфиопии с натуральным фермерским молоком
                 </p>
               </div>
-              <div class="product-card__price-block price-block">
+              <div class="price-block product-card__price-block">
                 <span class="price-block__new-price new-price">225₽</span>
                 <a href="blank.html" class="button-basic button-basic--catalog">
                   <svg class="basic-button__icon" width="20" height="16" role="img" aria-label="Корзина"
@@ -482,7 +484,7 @@
             </li>
           </ul>
         </div>
-        <div class="pagination">
+        <div class="pagination products__pagination">
           <ul class="pagination__list pagination-list">
             <li class="pagination-list__item">
               <button class="pagination-list__button" aria-label="Переход на предыдущую страницу" type="button">

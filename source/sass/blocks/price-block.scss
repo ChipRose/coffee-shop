@@ -1,0 +1,9 @@
+.price-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-block__new-price{
+  margin-right: 20px;
+}

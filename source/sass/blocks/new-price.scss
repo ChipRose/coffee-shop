@@ -1,0 +1,3 @@
+.new-price {
+  @include set-font-style(var(--fz-price), var(--lh-price), var(--fw-semi-bold));
+}
