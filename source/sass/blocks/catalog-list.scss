@@ -1,13 +1,9 @@
-.catalog-list {
-
-}
-
 .catalog-list__item {
   margin-right: auto;
   margin-bottom: 20px;
   margin-left: auto;
 
-  &:last-child{
+  &:last-child {
     margin-bottom: 0;
   }
 }
