@@ -1,5 +1,5 @@
 .title-badge {
-  @include set-font-style(var(--fz-badge), var(--lh-badge),"Montserrat", var(--fw-bold));
+  @include set-font-style(var(--fz-badge), var(--lh-badge), var(--fw-bold));
   text-transform: uppercase;
   color: var(--cl-base-primary);
   text-align: center;

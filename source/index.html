@@ -293,50 +293,50 @@
               <input class="filter__price" type="text" name="max-price" id="max-price" pattern="[0-9]{,3}">
             </p>
           </fieldset>
-          <fieldset class="filter__product-content">
-            <h3 class="title-sort-filter">
+          <fieldset class="filter-set">
+            <h3 class="title-sort-filter filter-set__title">
               Наличие молока
             </h3>
-            <label class="filter__item radio-item">
+            <label class="filter-set__item radio-item">
               <input class="visually-hidden radio-item__button" type="radio" name="product-property" value="no-matter" checked />
               <span class="radio-item__label">Неважно</span>
             </label>
-            <label class="filter__item radio-item">
+            <label class="filter-set__item radio-item">
               <input class="visually-hidden radio-item__button" type="radio" name="product-property" value="animal-milk-only" />
               <span class="radio-item__label">Только животное</span>
             </label>
-            <label class="filter__item radio-item">
+            <label class="filter-set__item radio-item">
               <input class="visually-hidden radio-item__button" type="radio" name="product-property" value="plant-milk-only" />
               <span class="radio-item__label">Только растительное</span>
             </label>
-            <label class="filter__item radio-item">
+            <label class="filter-set__item radio-item">
               <input class="visually-hidden radio-item__button" type="radio" name="product-property" value="no-milk" disabled/>
               <span class="radio-item__label">Без молока</span>
             </label>
           </fieldset>
-          <fieldset class="filter__country">
-            <h3 class="title-sort-filter">
+          <fieldset class="filter-set">
+            <h3 class="title-sort-filter filter-set__title">
               Страна произрастания
             </h3>
-            <label class="filter__item product-country">
-              <input class="visually-hidden" type="checkbox" name="brasil" value="brasil" checked />
-              <span class="product-property__name">Бразилия</span>
+            <label class="filter-set__item checkbox-item">
+              <input class="visually-hidden checkbox-item__button" type="checkbox" name="brasil" value="brasil" checked />
+              <span class="checkbox-item__label">Бразилия</span>
             </label>
-            <label class="filter__item product-country">
-              <input class="visually-hidden" type="checkbox" name="ethiopia" value="ethiopia" />
-              <span class="product-property__name">Эфиопия</span>
+            <label class="filter-set__item checkbox-item">
+              <input class="visually-hidden checkbox-item__button" type="checkbox" name="ethiopia" value="ethiopia" />
+              <span class="checkbox-item__label">Эфиопия</span>
             </label>
-            <label class="filter__item product-country">
-              <input class="visually-hidden" type="checkbox" name="colombia" value="colombia" />
-              <span class="product-property__name">Колумбия</span>
+            <label class="filter-set__item checkbox-item">
+              <input class="visually-hidden checkbox-item__button" type="checkbox" name="colombia" value="colombia" />
+              <span class="checkbox-item__label">Колумбия</span>
             </label>
-            <label class="filter__item product-country">
-              <input class="visually-hidden" type="checkbox" name="costa-rica" value="costa-rica" />
-              <span class="product-property__name">Коста-Рика</span>
+            <label class="filter-set__item checkbox-item">
+              <input class="visually-hidden checkbox-item__button" type="checkbox" name="costa-rica" value="costa-rica" checked disabled />
+              <span class="checkbox-item__label">Коста-Рика</span>
             </label>
-            <label class="filter__item product-country">
-              <input class="visually-hidden" type="checkbox" name="peru" value="peru" disabled />
-              <span class="product-property__name">Перу</span>
+            <label class="filter-set__item checkbox-item">
+              <input class="visually-hidden checkbox-item__button" type="checkbox" name="peru" value="peru" disabled />
+              <span class="checkbox-item__label">Перу</span>
             </label>
           </fieldset>
           <div class="filter__buttons-block">

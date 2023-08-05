@@ -1,0 +1,3 @@
+.title-sort-filter {
+  @include set-font-style(var(-fz-title-filter-sort-small), var(-fz-title-filter-sort-small), var(--fw-semi-bold));
+}

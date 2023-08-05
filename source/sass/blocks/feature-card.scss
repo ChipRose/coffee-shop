@@ -31,11 +31,11 @@
 
 .feature-card__title {
   margin-bottom: 4px;
-  @include set-font-style(var(--fz-title-section-small), var(--lh-title-section-small), "Montserrat", var(--fw-bold));
+  @include set-font-style(var(--fz-title-section-small), var(--lh-title-section-small), var(--fw-bold));
 
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
-    @include set-font-style(var(--fz-title-section-big), var(--lh-title-section-big), "Montserrat", 700);
+    @include set-font-style(var(--fz-title-section-big), var(--lh-title-section-big), var(--fw-bold));
   }
 }
 
