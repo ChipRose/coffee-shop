@@ -1,0 +1,15 @@
+.input-field {
+  padding: 8px 10px;
+  text-align: center;
+  border: 2px solid var(--cl-lighter-primary);
+  border-radius: var(--el-border-radius);
+
+  &:hover,
+  &:focus {
+    border-color: var(--cl-darker-primary);
+  }
+}
+
+.input-field::placeholder {
+  color: var(--cl-base-middle);
+}

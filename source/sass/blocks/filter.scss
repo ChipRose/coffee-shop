@@ -1,0 +1,20 @@
+.filter__price {
+  margin-bottom: 30px;
+}
+
+.filter__product-content {
+  margin-bottom: 34px;
+}
+
+.filter__country {
+  margin-bottom: 30px;
+}
+
+.filter__button {
+  margin-bottom: 20px;
+  min-width: 100%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

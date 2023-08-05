@@ -5,13 +5,20 @@
   <meta charset="UTF-8">
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- <link rel="stylesheet" href="libraries-css/leaflet.css" /> -->
+  <!-- <script src="js/libraries/leaflet.min.js"></script> -->
   <!-- Styles -->
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="libraries-css/nouislider.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <!-- Fonts -->
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
 </head>
 
 <body class="body page__body">
@@ -276,50 +283,57 @@
       </div>
     </section>
     <section class="products">
-      <div class="container">
-        <p class="title-badge">
+      <div class="container products__container">
+        <p class="title-badge products__badge">
           Каталог
         </p>
-        <h2 class="title">
+        <h2 class="title products__title">
           Каталог кофейных напитков
         </h2>
-        <form class="filter" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="filter__price">
-            <h3 class="title-sort-filter">Цена</h3>
-            <div id="price-range"></div>
-            <p class="filter__price-range">
-              <input class="filter__price" type="text" name="min-price" id="min-price" pattern="[0-9]{,3}">
-              -
-              <input class="filter__price" type="text" name="max-price" id="max-price" pattern="[0-9]{,3}">
+        <form class="filter products__filter" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter-price-set filter__price">
+            <h3 class="title-sort-filter filter-price-set__title">Цена</h3>
+            <div class="filter-price-set__range-slider range-slider" id="price-range-slider"></div>
+            <p class="filter-price-set__range-block range-block">
+              <input class="input-field range-block__price" type="number" name="min-price" value="0" min="0" max="1000"
+                placeholder="0" id="min-price">
+              <span class="range-block__divider">-</span>
+              <input class="input-field range-block__price" type="number" name="max-price" value="123" min="300" max="1000"
+                placeholder="1000" id="max-price">
             </p>
           </fieldset>
-          <fieldset class="filter-set">
+          <fieldset class="filter-set filter__product-content">
             <h3 class="title-sort-filter filter-set__title">
               Наличие молока
             </h3>
             <label class="filter-set__item radio-item">
-              <input class="visually-hidden radio-item__button" type="radio" name="product-property" value="no-matter" checked />
+              <input class="visually-hidden radio-item__button" type="radio" name="product-property" value="no-matter"
+                checked />
               <span class="radio-item__label">Неважно</span>
             </label>
             <label class="filter-set__item radio-item">
-              <input class="visually-hidden radio-item__button" type="radio" name="product-property" value="animal-milk-only" />
+              <input class="visually-hidden radio-item__button" type="radio" name="product-property"
+                value="animal-milk-only" />
               <span class="radio-item__label">Только животное</span>
             </label>
             <label class="filter-set__item radio-item">
-              <input class="visually-hidden radio-item__button" type="radio" name="product-property" value="plant-milk-only" />
+              <input class="visually-hidden radio-item__button" type="radio" name="product-property"
+                value="plant-milk-only" />
               <span class="radio-item__label">Только растительное</span>
             </label>
             <label class="filter-set__item radio-item">
-              <input class="visually-hidden radio-item__button" type="radio" name="product-property" value="no-milk" disabled/>
+              <input class="visually-hidden radio-item__button" type="radio" name="product-property" value="no-milk"
+                disabled />
               <span class="radio-item__label">Без молока</span>
             </label>
           </fieldset>
-          <fieldset class="filter-set">
+          <fieldset class="filter-set filter__country">
             <h3 class="title-sort-filter filter-set__title">
               Страна произрастания
             </h3>
             <label class="filter-set__item checkbox-item">
-              <input class="visually-hidden checkbox-item__button" type="checkbox" name="brasil" value="brasil" checked />
+              <input class="visually-hidden checkbox-item__button" type="checkbox" name="brasil" value="brasil"
+                checked />
               <span class="checkbox-item__label">Бразилия</span>
             </label>
             <label class="filter-set__item checkbox-item">
@@ -331,7 +345,8 @@
               <span class="checkbox-item__label">Колумбия</span>
             </label>
             <label class="filter-set__item checkbox-item">
-              <input class="visually-hidden checkbox-item__button" type="checkbox" name="costa-rica" value="costa-rica" checked disabled />
+              <input class="visually-hidden checkbox-item__button" type="checkbox" name="costa-rica" value="costa-rica"
+                checked disabled />
               <span class="checkbox-item__label">Коста-Рика</span>
             </label>
             <label class="filter-set__item checkbox-item">
@@ -340,10 +355,10 @@
             </label>
           </fieldset>
           <div class="filter__buttons-block">
-            <a class="button-basic" href="blank.html">
+            <a class="button-basic filter__button" href="blank.html">
               Применить
             </a>
-            <button class="button-extra" type="reset">
+            <button class="button-extra filter__button" type="reset">
               Сбросить
             </button>
           </div>
@@ -633,7 +648,10 @@
       </div>
     </section>
   </footer>
+  <script src="./js/libraries/nouislider.min.js" defer></script>
+  <script src="./js/range-slider.js" defer></script>
   <script src="./js/script.js" defer></script>
+
 </body>
 
 </html>

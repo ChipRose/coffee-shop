@@ -87,6 +87,7 @@ export function createStack() {
 export function copyAssets() {
   return gulp.src([
     'source/fonts/**/*.{woff2,woff}',
+    'source/libraries-css/**',
     'source/*.ico',
     'source/*.webmanifest',
   ], {
@@ -114,7 +115,7 @@ function reloadServer(done) {
 
 function watchFiles() {
   gulp.watch('source/sass/**/*.scss', gulp.series(processStyles));
-  gulp.watch('source/js/script.js', gulp.series(processScripts));
+  gulp.watch('source/js/**', gulp.series(processScripts));
   gulp.watch('source/*.html', gulp.series(processMarkup, reloadServer));
 }
 

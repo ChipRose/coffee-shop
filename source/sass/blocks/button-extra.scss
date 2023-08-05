@@ -3,10 +3,10 @@
   display: block;
   width: fit-content;
   background: var(--cl-base-contrast);
-  border-radius: 4px;
+  border-radius: var(--el-border-radius);
   transition: var(--el-transition);
 
-  @include set-font-style(var(-fz-regular-text-big), var(-lh-regular-text-big));
+  @include set-font-style(var(--fz-regular-text-big), var(--lh-regular-text-big));
   color: var(--cl-base-primary);
   text-align: center;
 

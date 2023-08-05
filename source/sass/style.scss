@@ -15,6 +15,7 @@
 @import "blocks/container";
 @import "blocks/header";
 @import "blocks/features";
+@import "blocks/products";
 
 /* STRUCTURE BLOCKS */
 @import "blocks/features-list";
@@ -22,9 +23,14 @@
 @import "blocks/title-badge";
 @import "blocks/title";
 @import "blocks/title-sort-filter";
+@import "blocks/filter";
 @import "blocks/filter-set";
+@import "blocks/filter-price-set";
+@import "blocks/range-block";
 @import "blocks/radio-item";
 @import "blocks/checkbox-item";
+@import "blocks/input-field";
+@import "blocks/range-slider";
 
 /* BUTTONS */
 @import "blocks/button-basic";
