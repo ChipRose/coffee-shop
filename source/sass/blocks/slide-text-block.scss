@@ -1,0 +1,27 @@
+.slide-text-block {
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.slide-text-block__badge {
+  margin-bottom: 4px;
+}
+
+.slide-text-block__title {
+  margin-bottom: 10px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.slide-text-block__description {
+  @include set-font-style(var(--fz-slide-description-small), --lh-slide-description-small);
+
+  @media (min-width: $tablet-width) {
+    @include set-font-style(var(--fz-slide-description-big), --lh-slide-description-big);
+  }
+}

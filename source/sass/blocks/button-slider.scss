@@ -1,0 +1,14 @@
+.button-slider {
+  width: 20px;
+  height: 100%;
+  background: none;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 77%;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+  }
+}

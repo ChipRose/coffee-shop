@@ -22,7 +22,7 @@
 </head>
 
 <body class="body page__body">
-  <header class="header">
+  <!-- <header class="header">
     <div class="container header__wrapper">
       <a class="logo header__logo" href="#">
         <picture>
@@ -76,55 +76,70 @@
         </ul>
       </nav>
     </div>
-  </header>
+  </header> -->
   <main class="main">
     <h1 class="visually-hidden">Drink2Go — это интернет-магазин по продаже кофейных напитков. </h1>
-    <section class="slider">
-      <div class="container">
-        <ul class="slider__list">
-          <li class="slider__item">
-            <div class="slider__image-block">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/slider/flat_white_big.webp 1x, img/slider/flat_white_big@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/slider/flat_white_middle.webp 1x, img/slider/flat_white_middle@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/slider/flat_white_small.webp 1x, img/slider/flat_white_small@2x.webp 2x">
-                <source media="(min-width: 1440px)"
-                  srcset="img/slider/flat_white_big.png 1x, img/slider/flat_white_big@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/slider/flat_white_middle.png 1x, img/slider/flat_white_middle@2x.png 2x">
-                <img src="img/slider/flat_white_small.png" srcset="img/slider/flat_white_small@2x.png 2x"
-                  alt="Белая банка кофейного напитка" />
-              </picture>
+    <section class="promo">
+      <h3 class="visually-hidden">
+        Витрина новинок
+      </h3>
+      <button class="button-slider promo__button" id="slider-button-prev" type="button">
+        <svg width="11" height="20" role="img" focusable="false">
+          <use xlink:href="img/icons/stack.svg#arrow-prev-slide" />
+        </svg>
+        <span class="visually-hidden">
+          Предыдущий слайд
+        </span>
+      </button>
+      <button class="button-slider promo__button promo__button--next" id="slider-button-next" type="button">
+        <svg width="11" height="20" role="img" focusable="false">
+          <use xlink:href="img/icons/stack.svg#arrow-prev-slide" />
+        </svg>
+        <span class="visually-hidden">
+          Следующий слайд
+        </span>
+      </button>
+      <ul class="slider promo__slider">
+        <li class="slide slide--flat">
+          <div class="slide__image-block">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/slider/flat_white_big.webp 1x, img/slider/flat_white_big@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/slider/flat_white_middle.webp 1x, img/slider/flat_white_middle@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/slider/flat_white_small.webp 1x, img/slider/flat_white_small@2x.webp 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/slider/flat_white_big.png 1x, img/slider/flat_white_big@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/slider/flat_white_middle.png 1x, img/slider/flat_white_middle@2x.png 2x">
+              <img src="img/slider/flat_white_small.png" srcset="img/slider/flat_white_small@2x.png 2x"
+                alt="Белая банка кофейного напитка" />
+            </picture>
+          </div>
+          <div class="slide__info">
+            <div class="slide-text-block slide__text-block">
+              <p class="title-badge slide-text-block__badge">
+                Новинка!
+              </p>
+              <h4 class="title title--slider slide-text-block__title">
+                Декаф Флэт Уайт
+              </h4>
+              <p class="slide-text-block__description">
+                Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для
+                расслабления после тяжёлого рабочего дня
+              </p>
             </div>
-            <div class="slider__info">
-              <div class="slider__text-block">
-                <h2 class="title-badge">
-                  Новинка!
-                </h2>
-                <h3 class="visually-hidden">
-                  Витрина новинок
-                </h3>
-                <h4 class="title title--subsection">
-                  Декаф Флэт Уайт
-                </h4>
-                <p class="text-basic">
-                  Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для
-                  расслабления после тяжёлого рабочего дня
-                </p>
-              </div>
-              <div class="slider__price-block price-block">
-                <s class="price-block__old-price old-price">295₽</s>
-                <span class="price-block__new-price new-price">225₽</span>
-                <a href="#" class="button-basic">
-                  Заказать
-                </a>
-              </div>
+            <div class="price-block slide__price-block">
+              <s class="old-price price-block__old-price">295₽</s>
+              <span class="new-price price-block__new-price">225₽</span>
+              <a href="#" class="button-basic">
+                Заказать
+              </a>
             </div>
-          </li>
-          <li class="slider__item">
+          </div>
+        </li>
+        <!-- <li class="slider__item">
             <div class="slider__image-block">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
@@ -206,9 +221,8 @@
                 </a>
               </div>
             </div>
-          </li>
-        </ul>
-      </div>
+          </li> -->
+      </ul>
     </section>
     <section class="features">
       <div class="container features__container">

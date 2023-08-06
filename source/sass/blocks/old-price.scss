@@ -1,0 +1,4 @@
+.old-price {
+  @include set-font-style(var(--fz-old-price), var(--lh-old-price));
+  color: var(--cl-base-primary);
+}

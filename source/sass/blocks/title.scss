@@ -5,4 +5,12 @@
   @media (min-width: $tablet-width) {
     @include set-font-style(var(--fz-title-big), var(--lh-title-big), var(--fw-bold));
   }
+
+  &--slider {
+    @include set-font-style(var(--fz-title-subsection-small), var(--fz-title-subsection-small), var(--fw-bold));
+
+    @media (min-width: $tablet-width) {
+      @include set-font-style(var(--fz-title-subsection-big), var(--fz-title-subsection-big), var(--fw-bold));
+    }
+  }
 }

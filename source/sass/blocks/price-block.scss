@@ -1,9 +1,13 @@
 .price-block {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.price-block__new-price{
+.price-block__old-price {
+  margin-right: 6px;
+}
+
+.price-block__new-price {
   margin-right: 20px;
 }
