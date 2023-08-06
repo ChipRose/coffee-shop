@@ -79,7 +79,7 @@
   </header>
   <main class="main">
     <h1 class="visually-hidden">Drink2Go — это интернет-магазин по продаже кофейных напитков. </h1>
-    <!-- <section class="slider">
+    <section class="slider">
       <div class="container">
         <ul class="slider__list">
           <li class="slider__item">
@@ -209,7 +209,7 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
     <section class="features">
       <div class="container features__container">
         <p class="title-badge features__badge">
@@ -298,8 +298,8 @@
               <input class="input-field range-block__price" type="number" name="min-price" value="0" min="0" max="1000"
                 placeholder="0" id="min-price">
               <span class="range-block__divider">-</span>
-              <input class="input-field range-block__price" type="number" name="max-price" value="123" min="300" max="1000"
-                placeholder="1000" id="max-price">
+              <input class="input-field range-block__price" type="number" name="max-price" value="123" min="300"
+                max="1000" placeholder="1000" id="max-price">
             </p>
           </fieldset>
           <fieldset class="filter-set filter__product-content">
@@ -520,64 +520,62 @@
       </div>
     </section>
     <section class="map">
-      <div class="map__block" id="map-block">
+      <div class="map-block" id="map-block">
         <picture>
-          <source type="image/webp" media="(min-width: 1440px)"
-            srcset="img/map/map_big.webp 1x, img/map/map_big@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/map/map_middle.webp 1x, img/map/map_middle@2x.webp 2x">
-          <source type="image/webp" srcset="img/map/map_small.webp 1x, img/map/map_small@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img/map/map_big.png 1x, img/map/map_big@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/map/map_middle.png 1x, img/map/map_middle@2x.png 2x">
-          <img src="img/map/map_small.png" srcset="img/map/map_small@2x.png 2x"
+          <source type="image/webp" srcset="img/map/map_big.webp 1x, img/map/map_big@2x.webp 2x">
+          <img src="img/map/map_big.png" srcset="img/map/map_big@2x.png 2x"
             alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" />
         </picture>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <section class="social">
-      <div class="container">
-        <div class="social__logo-block">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo/logo-full.svg">
-            <img class="img" src="img/logo/logo-medium.svg" alt="Логотип Drink2Go" />
-          </picture>
+    <section class="footer-top footer__item">
+      <div class="container footer-top__container">
+        <div class="social">
+          <div class="footer-logo social__logo-block">
+            <div class="footer-logo__image-block">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo/logo-full.svg">
+                <img class="img" src="img/logo/logo-medium.svg" alt="Логотип Drink2Go" />
+              </picture>
+            </div>
+            <span class="footer-logo__description">
+              Интернет-магазин кофейных напитков
+            </span>
+          </div>
+          <ul class="social-block social__list">
+            <li class="social-block__item">
+              <a href="#" class="social-block-link" title="Ссылка ВКонтакте">
+                <svg width="20" height="20" role="img" aria-label="ВКонтакте" focusable="false">
+                  <use xlink:href="img/icons/stack.svg#vk-icon" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-block__item">
+              <a href="#" class="social-block-link" title="Ссылка Pinterest">
+                <svg width="20" height="20" role="img" aria-label="Pinterest" focusable="false">
+                  <use xlink:href="img/icons/stack.svg#pinterest-icon" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-block__item">
+              <a href="#" class="social-block-link" itle="Ссылка одноклассники">
+                <svg width="20" height="20" role="img" aria-label="Одноклассники" focusable="false">
+                  <use xlink:href="img/icons/stack.svg#ok-icon" />
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="social__list social-block">
-          <li class="social-block__item">
-            <a href="#" class="social-block__link">
-              <svg class="social-block__icon" width="20" height="20" role="img" aria-label="ВКонтакте"
-                focusable="false">
-                <use xlink:href="img/icons/stack.svg#vk-icon" />
-              </svg>
-            </a>
-          </li>
-          <li class="social-block__item">
-            <a href="#" class="social-block__link">
-              <svg class="social-block__icon" width="20" height="20" role="img" aria-label="Pinterest"
-                focusable="false">
-                <use xlink:href="img/icons/stack.svg#pinterest-icon" />
-              </svg>
-            </a>
-          </li>
-          <li class="social-block__item">
-            <a href="#" class="social-block__link">
-              <svg class="social-block__icon" width="20" height="20" role="img" aria-label="Pinterest"
-                focusable="false">
-                <use xlink:href="img/icons/stack.svg#ok-icon" />
-              </svg>
-            </a>
-          </li>
-        </ul>
       </div>
     </section>
-    <nav class="footer__menu">
-      <div class="container">
-        <h2 class="title-extra">
+    <nav class="footer-navigation footer__item">
+      <div class="container footer-navigation__container">
+        <h2 class="title-extra footer-navigation__title">
           Интернет-магазин
         </h2>
-        <ul class="footer__menu-list footer-menu">
+        <ul class="footer-menu footer__menu-list">
           <li class="footer-menu__item">
             <a href="#" class="footer-menu__link">Каталог</a>
           </li>
@@ -593,12 +591,12 @@
         </ul>
       </div>
     </nav>
-    <nav class="footer__menu">
-      <div class="container">
-        <h2 class="title-extra">
+    <nav class="footer-navigation footer__item">
+      <div class="container footer-navigation__container">
+        <h2 class="title-extra footer-navigation__title">
           Медиа
         </h2>
-        <ul class="footer__menu-list footer-menu">
+        <ul class="footer-menu footer__menu-list">
           <li class="footer-menu__item">
             <a href="#" class="footer-menu__link">Блог</a>
           </li>
@@ -611,42 +609,49 @@
         </ul>
       </div>
     </nav>
-    <section class="contacts">
-      <div class="container">
-        <h2 class="title-extra">
+    <section class="contacts footer__item">
+      <div class="container contacts__container">
+        <h2 class="title-extra contacts__title">
           Контакты
         </h2>
         <ul class="contacts-list">
           <li class="contacts-list__item">
-            <svg width="13" height="16" role="img" aria-label="Локация" focusable="false">
-              <use xlink:href="img/icons/stack.svg#location-icon" />
-            </svg>
+            <div class="contacts-list__image-block">
+              <svg width="13" height="16" role="img" aria-label="Локация" focusable="false">
+                <use xlink:href="img/icons/stack.svg#location-icon" />
+              </svg>
+            </div>
             <span class="contacts-list__item-label">
               Санкт-Петербург, набережная реки Карповки, дом 5
             </span>
           </li>
           <li class="contacts-list__item">
-            <svg width="13" height="16" role="img" aria-label="Локация" focusable="false">
-              <use xlink:href="img/icons/stack.svg#phone-icon" />
-            </svg>
-            <span class="contacts-list__item-label">
+            <div class="contacts-list__image-block">
+              <svg width="13" height="16" role="img" aria-label="Локация" focusable="false">
+                <use xlink:href="img/icons/stack.svg#phone-icon" />
+              </svg>
+            </div>
+            <a href="tel:+79999999999" class="contacts-list__item-label">
               +7 (999) 999-99-99
-            </span>
+            </a>
           </li>
         </ul>
       </div>
     </section>
     <section class="copyright">
-      <div class="container">
-        <span lass="copyright__label">Разработано в</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="copyright__label">
-            HTML Academy
-          </span>
-          <svg width="12" height="16" role="img" aria-label="HTML academy" focusable="false">
-            <use xlink:href="img/icons/stack.svg#html-academy-logo" />
-          </svg>
-        </a>
+      <div class="container copyright__container">
+        <div class="copyright-block">
+          <p class="copyright-block__label">Разработано в </p>
+          <a class="html-academy-logo copyright-block__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="html-academy-logo__label copyright__label">
+              HTML Academy
+            </span>
+            <svg class="html-academy-logo__icon" width="12" height="16" role="img" aria-label="HTML academy"
+              focusable="false">
+              <use xlink:href="img/icons/stack.svg#html-academy-logo" />
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
   </footer>

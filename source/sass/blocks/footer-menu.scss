@@ -1,0 +1,25 @@
+.footer-menu__item {
+  margin-bottom: 4px;
+  @include set-font-style(var(--fz-menu-text), var(--lh-menu-text), var(--fw-medium));
+  text-transform: uppercase;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.footer-menu__link{
+  display: block;
+  padding: var(--el-extra-indent) 0;
+  letter-spacing: 0.02em;
+  color: var(--cl-base-main);
+  transition: color var(--el-transition);
+
+  &:hover{
+    color: var(--cl-lighter-primary);
+  }
+
+  &:active{
+    color:var(--cl-darker-primary);
+  }
+}

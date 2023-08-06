@@ -1,0 +1,24 @@
+.footer-logo__image-block {
+  width: 82px;
+  height: 36px;
+
+  svg {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.footer-logo__description {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+
+    @include set-font-style(var(--fz-small-text),var(--lh-small-text))
+  }
+}

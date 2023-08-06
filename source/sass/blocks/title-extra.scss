@@ -1,0 +1,4 @@
+.title-extra {
+  @include set-font-style(var(--fz-title-extra), var(--lh-title-extra), var(--fw-bold));
+  color: var(--cl-base-primary);
+}
