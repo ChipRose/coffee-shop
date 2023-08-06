@@ -63,14 +63,24 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .slide__price-block {
+  justify-content: center;
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     order: 2;
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
   }
 }

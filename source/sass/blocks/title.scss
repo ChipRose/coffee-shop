@@ -12,5 +12,9 @@
     @media (min-width: $tablet-width) {
       @include set-font-style(var(--fz-title-subsection-big), var(--fz-title-subsection-big), var(--fw-bold));
     }
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
+    }
   }
 }

@@ -22,19 +22,44 @@
 </head>
 
 <body class="body page__body">
-  <!-- <header class="header">
-    <div class="container header__wrapper">
-      <a class="logo header__logo" href="#">
+  <header class="header">
+    <div class="header__container">
+      <a class="header__logo" href="#">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo/logo-full.svg">
           <source media="(min-width: 768px)" srcset="img/logo/logo-medium.svg">
           <img class="img" src="img/logo/logo.svg" alt="Логотип Drink2Go" />
         </picture>
       </a>
+      <nav class="user-menu header__user-menu">
+        <ul class="user-menu__list" id="user-menu-list">
+          <li class="user-menu__item">
+            <a class="button-icon user-menu__link" href="#">
+              <svg width="16" height="16" role="img" aria-label="Авторизация" focusable="false">
+                <use xlink:href="img/icons/stack.svg#user" />
+              </svg>
+              <span class="user-menu__label">
+                Войти
+              </span>
+            </a>
+          </li>
+          <li class="user-menu__item">
+            <a class="button-icon user-menu__link" href="#">
+              <svg width="16" height="16" role="img" aria-label="Корзина" focusable="false">
+                <use xlink:href="img/icons/stack.svg#basket" />
+              </svg>
+              <span class="user-menu__label">
+                Корзина
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
       <nav class="navigation navigation--nojs navigation--closed header__menu">
-        <button class="navigation__toggle header__burger" type="button" aria-expanded="false"
+        <button class="button-icon navigation__toggle" type="button" aria-expanded="false"
           aria-controls="navigation-list">
           <span class="visually-hidden">Открыть меню </span>
+          <p class="navigation__burger"></p>
         </button>
         <ul class="navigation__list" id="navigation-list">
           <li class="navigation__item">
@@ -51,32 +76,9 @@
           </li>
         </ul>
       </nav>
-      <nav class="user-menu header__menu">
-        <ul class="user-menu__list" id="user-menu-list">
-          <li class="user-menu__item">
-            <a class="user-menu__link" href="#">
-              <svg width="16" height="16" role="img" aria-label="Авторизация" focusable="false">
-                <use xlink:href="img/icons/stack.svg#user" />
-              </svg>
-              <span class="user-menu__label">
-                Войти
-              </span>
-            </a>
-          </li>
-          <li class="user-menu__item">
-            <a class="user-menu__link" href="#">
-              <svg width="16" height="16" role="img" aria-label="Корзина" focusable="false">
-                <use xlink:href="img/icons/stack.svg#basket" />
-              </svg>
-              <span class="user-menu__label">
-                Корзина
-              </span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      
     </div>
-  </header> -->
+  </header>
   <main class="main">
     <h1 class="visually-hidden">Drink2Go — это интернет-магазин по продаже кофейных напитков. </h1>
     <section class="promo">
@@ -119,7 +121,7 @@
           </div>
           <div class="slide__info">
             <div class="slide-text-block slide__text-block">
-              <p class="title-badge slide-text-block__badge">
+              <p class="title-badge title-badge--slider slide-text-block__badge">
                 Новинка!
               </p>
               <h4 class="title title--slider slide-text-block__title">
@@ -560,21 +562,21 @@
           </div>
           <ul class="social-block social__list">
             <li class="social-block__item">
-              <a href="#" class="social-block-link" title="Ссылка ВКонтакте">
+              <a href="#" class="social-link" title="Ссылка ВКонтакте">
                 <svg width="20" height="20" role="img" aria-label="ВКонтакте" focusable="false">
                   <use xlink:href="img/icons/stack.svg#vk-icon" />
                 </svg>
               </a>
             </li>
             <li class="social-block__item">
-              <a href="#" class="social-block-link" title="Ссылка Pinterest">
+              <a href="#" class="social-link" title="Ссылка Pinterest">
                 <svg width="20" height="20" role="img" aria-label="Pinterest" focusable="false">
                   <use xlink:href="img/icons/stack.svg#pinterest-icon" />
                 </svg>
               </a>
             </li>
             <li class="social-block__item">
-              <a href="#" class="social-block-link" itle="Ссылка одноклассники">
+              <a href="#" class="social-link" itle="Ссылка одноклассники">
                 <svg width="20" height="20" role="img" aria-label="Одноклассники" focusable="false">
                   <use xlink:href="img/icons/stack.svg#ok-icon" />
                 </svg>

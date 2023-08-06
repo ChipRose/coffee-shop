@@ -13,15 +13,15 @@
 .slide-text-block__title {
   margin-bottom: 10px;
 
-  @media (max-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 16px;
   }
 }
 
 .slide-text-block__description {
-  @include set-font-style(var(--fz-slide-description-small), --lh-slide-description-small);
+  @include set-font-style(var(--fz-slide-description-small), var(--lh-slide-description-small));
 
   @media (min-width: $tablet-width) {
-    @include set-font-style(var(--fz-slide-description-big), --lh-slide-description-big);
+    @include set-font-style(var(--fz-slide-description-big), var(--lh-slide-description-big));
   }
 }

@@ -8,6 +8,12 @@
   &:focus {
     border-color: var(--cl-darker-primary);
   }
+
+  &:disabled {
+    background: var(--cl-lightest-middle);
+    border-color: var(--cl-light-middle);
+    color: var(--cl-base-middle);
+  }
 }
 
 .input-field::placeholder {

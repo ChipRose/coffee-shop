@@ -4,7 +4,9 @@
   color: var(--cl-base-primary);
   text-align: center;
   
-  &--left{
-    text-align: left;
+  &--slider{
+    @media (min-width:$desktop-width) {
+      text-align: left;
+    }
   }
 }

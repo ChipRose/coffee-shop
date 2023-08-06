@@ -1,5 +1,18 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  background: var(--cl-base-contrast);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header__logo{
+  padding: 13px 20px;
+  margin-right: var(--el-main-indent);
+}
+
+.header__user-menu{
+  margin-left: auto;
 }

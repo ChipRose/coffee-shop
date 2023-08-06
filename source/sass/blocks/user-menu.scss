@@ -1,0 +1,9 @@
+.user-menu__list {
+  display: flex;
+}
+
+.user-menu__label {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}

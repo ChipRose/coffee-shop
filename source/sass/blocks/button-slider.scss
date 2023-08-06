@@ -3,6 +3,16 @@
   height: 100%;
   background: none;
 
+  svg {
+    fill: var(--cl-base-primary);
+  }
+
+  &:disabled {
+    svg {
+      fill: var(--cl-base-middle);
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 77%;
@@ -10,5 +20,15 @@
 
   @media (min-width: $desktop-width) {
     height: 100%;
+    transition: background-color var(--el-transition);
+
+    &:hover,
+    &:focus {
+      background: var(--cl-grd-hover);
+    }
+
+    &:active {
+      background: var(--cl-grd-active);
+    }
   }
 }

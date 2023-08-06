@@ -3,16 +3,16 @@
   --cl-opacity-main: rgba(0 0 0/0.15);
   --cl-base-contrast: #ffffff;
   --cl-base-middle: #bdbdbd;
+  --cl-base-secondary: #f0ebff;
+  --cl-base-primary:#7859cf;
   --cl-light-middle: #e2e2e2;
   --cl-lightest-middle: #f8f8f8;
-  --cl-base-primary:#7859cf;
   --cl-opacity-primary: rgba(120 89 207/0.25);
   --cl-lighter-primary: #9070ec;
   --cl-darker-primary: #593cac;
-  --cl-base-secondary: #f0ebff;
   --cl-decor-flat: #f3ebe1;
   --cl-decor-lavender: #eae6fc;
   --cl-decor-espresso: #e5e6e8;
-  --cl-grd-active: linear-gradient(90deg, rgba(120 89 207/1) 0%, rgba(0 0 0/0) 100%);
-  --cl-grd-active: linear-gradient(90deg, rgba(255 255 255/1) 0%, rgba(0 0 0/0) 100%);
+  --cl-grd-active: linear-gradient(to right, rgba(120 89 207/1) 0%, transparent 100%);
+  --cl-grd-hover: linear-gradient(to right, rgba(255 255 255/1) 0%, transparent 100%);
 }
