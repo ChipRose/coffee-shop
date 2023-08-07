@@ -2,24 +2,24 @@
   margin-bottom: 16px;
   display: flex;
 
-  &:last-child{
+  &:last-child {
     margin-bottom: 0;
   }
 }
 
-.contacts-list__image-block{
+.contacts-list__image-block {
   margin-right: 6px;
   width: 13px;
   height: 16px;
-
-  svg {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
 }
 
-.contacts-list__item-label{
+.contacts-list__image-block svg {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.contacts-list__item-label {
   @include set-font-style(var(--fz-small-text), var(--lh-small-text));
   color: var(--cl-base-main);
 }

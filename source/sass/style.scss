@@ -23,7 +23,16 @@
 @import "blocks/contacts";
 @import "blocks/copyright";
 
+/* BUTTONS */
+@import "blocks/button-basic";
+@import "blocks/button-extra";
+@import "blocks/button-slider";
+@import "blocks/button-icon";
+
 /* STRUCTURE BLOCKS */
+@import "blocks/swiper";
+@import "blocks/logo";
+@import "blocks/navigation-menu";
 @import "blocks/user-menu";
 @import "blocks/slide";
 @import "blocks/slide-text-block";
@@ -61,11 +70,6 @@
 @import "blocks/html-academy-logo";
 @import "blocks/copyright-block";
 
-/* BUTTONS */
-@import "blocks/button-basic";
-@import "blocks/button-extra";
-@import "blocks/button-slider";
-@import "blocks/button-icon";
 
 
 

@@ -7,4 +7,18 @@
   align-items: center;
   background: none;
   border-radius: var(--el-border-radius);
+  transition: all var(--el-transition);
+  @include set-font-style(var(--fz-menu-text),var(--lh-menu-text),var(-fw-medium));
+  color: var(--cl-base-main);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  &:hover {
+    color: var(--cl-base-primary);
+    background: var(--cl-base-secondary);
+  }
+}
+
+.button-icon:hover svg {
+  fill: var(--cl-base-primary);
 }

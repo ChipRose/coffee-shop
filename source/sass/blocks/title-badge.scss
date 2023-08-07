@@ -1,8 +1,8 @@
 .title-badge {
   @include set-font-style(var(--fz-badge), var(--lh-badge), var(--fw-bold));
   text-transform: uppercase;
-  color: var(--cl-base-primary);
   text-align: center;
+  color: var(--cl-base-primary);
   
   &--slider{
     @media (min-width:$desktop-width) {

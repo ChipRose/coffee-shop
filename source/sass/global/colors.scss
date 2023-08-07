@@ -13,6 +13,6 @@
   --cl-decor-flat: #f3ebe1;
   --cl-decor-lavender: #eae6fc;
   --cl-decor-espresso: #e5e6e8;
-  --cl-grd-active: linear-gradient(to right, rgba(120 89 207/1) 0%, transparent 100%);
-  --cl-grd-hover: linear-gradient(to right, rgba(255 255 255/1) 0%, transparent 100%);
+  --cl-grd-active: linear-gradient(to right, rgba(120 89 207/1) -125%, transparent 100%);
+  --cl-grd-hover: linear-gradient(to right, rgba(255 255 255/1) 0 -125%, transparent 100%);
 }

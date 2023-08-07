@@ -1,17 +1,6 @@
 .button-slider {
   width: 20px;
   height: 100%;
-  background: none;
-
-  svg {
-    fill: var(--cl-base-primary);
-  }
-
-  &:disabled {
-    svg {
-      fill: var(--cl-base-middle);
-    }
-  }
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -21,14 +10,29 @@
   @media (min-width: $desktop-width) {
     height: 100%;
     transition: background-color var(--el-transition);
-
-    &:hover,
-    &:focus {
-      background: var(--cl-grd-hover);
-    }
-
-    &:active {
-      background: var(--cl-grd-active);
-    }
   }
+}
+
+.button-slider[aria-disabled='true']{
+  opacity: 1;
+  svg {
+    fill: var(--cl-base-middle);
+  }
+}
+
+.button-slider[aria-disabled='false']{
+  &:hover,
+  &:focus {
+    background: var(--cl-grd-hover);
+  }
+
+  &:active {
+    background: var(--cl-grd-active);
+  }
+}
+
+.button-slider svg {
+  width: 11px;
+  height: 20px;
+  fill: var(--cl-base-primary);
 }

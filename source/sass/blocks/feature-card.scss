@@ -13,12 +13,6 @@
   margin-bottom: 10px;
   width: 52px;
 
-  img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     margin-right: 20px;
     margin-bottom: 0;
@@ -27,6 +21,12 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
   }
+}
+
+.feature-card__image-block img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .feature-card__title {

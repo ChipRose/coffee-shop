@@ -5,8 +5,28 @@
 .promo__button {
   position: absolute;
 
+  &--next::after,
+  &--prev::after {
+    display: none;
+  }
+
   &--next {
+    top: 20px;
     right: 0;
     transform: rotate(180deg);
+  }
+
+  &--prev {
+    top: 20px;
+    left: 0;
+  }
+}
+
+.promo__pagination {
+  display: none;
+
+  @media (min-width:$desktop-width) {
+    display: block;
+    bottom: 60px;
   }
 }

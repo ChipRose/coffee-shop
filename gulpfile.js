@@ -50,6 +50,12 @@ export function processStyles() {
     .pipe(browser.stream());
 }
 
+// export function processScripts() {
+//   // gulp.src('./source/js/**/*.js')
+//   // .pipe(plumber())
+//   // .pipe(webpackStream(webpackConfig), webpack) 
+//   // .pipe(gulp.dest('./build/js'));
+// }
 export function processScripts() {
   return gulp.src('source/js/**/*.js')
     .pipe(terser())

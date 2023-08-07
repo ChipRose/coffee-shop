@@ -7,14 +7,6 @@
   align-items: center;
   border-radius: var(--el-border-radius);
 
-  svg {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    fill: var(--cl-base-middle);
-    transition: all var(--el-transition);
-  }
-
   &:hover,
   &:focus {
     background: var(--cl-base-secondary);
@@ -27,4 +19,12 @@
   &:active {
     background: var(--cl-opacity-primary);
   }
+}
+
+.social-link svg {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  fill: var(--cl-base-middle);
+  transition: all var(--el-transition);
 }

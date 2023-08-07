@@ -20,16 +20,16 @@
   margin-bottom: 24px;
   width: 130px;
   height: 188px;
+}
 
-  a {
-    display: block;
-  }
+.product-card__image-block a {
+  display: block;
+}
 
-  img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
+.product-card__image-block img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .product-card__text-block {
