@@ -6,9 +6,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @include set-font-style(var(--fz-regular-text-big), var(--lh-regular-text-big));
   background: var(--cl-base-contrast);
   border-radius: var(--el-border-radius);
+
+  @include set-font-style(var(--fz-regular-text-big), var(--lh-regular-text-big));
 
   &--current {
     font-weight: var(--fw-semi-bold);
@@ -25,9 +26,11 @@
   &:active,
   &:disabled {
     color: var(--cl-base-contrast);
+
     .pagination-button__label {
       color: var(--cl-base-contrast);
     }
+
     .pagination-button__icon {
       @media (max-width: $mobile-width-only) {
         fill: var(--cl-base-contrast);

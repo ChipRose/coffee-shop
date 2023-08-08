@@ -13,14 +13,15 @@
   }
 }
 
-.button-slider[aria-disabled='true']{
+.button-slider[aria-disabled="true"] {
   opacity: 1;
+
   svg {
     fill: var(--cl-base-middle);
   }
 }
 
-.button-slider[aria-disabled='false']{
+.button-slider[aria-disabled="false"] {
   &:hover,
   &:focus {
     background: var(--cl-grd-hover);

@@ -20,6 +20,7 @@
 
 .slide-text-block__description {
   margin-bottom: var(--el-extra-indent);
+
   @include set-font-style(var(--fz-slide-description-small), var(--lh-slide-description-small));
 
   &:last-child {

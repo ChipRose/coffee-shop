@@ -18,7 +18,7 @@
 .products__sort {
   margin-bottom: 16px;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 26px;
   }
 }
@@ -29,7 +29,7 @@
 
 .products__pagination {
   width: fit-content;
-  margin: 0 auto; 
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
@@ -37,12 +37,12 @@
   }
 }
 
-@media (min-width:$desktop-width) {
-  .products__wrapper{
+@media (min-width: $desktop-width) {
+  .products__wrapper {
     display: flex;
   }
 
-  .products__filter{
+  .products__filter {
     flex: 0 0 318px;
   }
 }

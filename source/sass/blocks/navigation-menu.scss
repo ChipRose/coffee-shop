@@ -14,6 +14,7 @@
 
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid var(--cl-base-secondary);
+
     &:first-child {
       border-top: 1px solid var(--cl-base-secondary);
     }

@@ -10,11 +10,15 @@
   color: var(--cl-base-primary);
   text-align: center;
 
-  &:focus, &:hover, &:active, &:disabled {
+  &:focus,
+  &:hover,
+  &:active,
+  &:disabled {
     color: var(--cl-base-contrast);
   }
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     background: var(--cl-lighter-primary);
   }
 

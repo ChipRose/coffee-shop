@@ -27,12 +27,13 @@
   padding: 4px 30px 4px 10px;
   max-width: 165px;
   appearance: none;
-  @include set-font-style(var(--fz-regular-text-big), var(--lh-regular-text-big), var(--fw-semi-bold));
   background: none;
-  color: var(--cl-base-primary);
-  text-align: center;
   border-radius: var(--el-border-radius);
   transition: var(--el-transition);
+
+  @include set-font-style(var(--fz-regular-text-big), var(--lh-regular-text-big), var(--fw-semi-bold));
+  color: var(--cl-base-primary);
+  text-align: center;
 
   &::-ms-expand {
     display: none;

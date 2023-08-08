@@ -3,9 +3,9 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--cl-base-primary);
-  
-  &--slider{
-    @media (min-width:$desktop-width) {
+
+  &--slider {
+    @media (min-width: $desktop-width) {
       text-align: left;
     }
   }
