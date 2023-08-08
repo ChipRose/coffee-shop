@@ -29,6 +29,10 @@
   margin-bottom: 24px;
   width: 130px;
   height: 188px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .product-card__image-block a {

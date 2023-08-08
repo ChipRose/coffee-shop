@@ -20,6 +20,10 @@
 .body__main {
   grid-row: 2/3;
   grid-column: 1/2;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
 }
 
 .body__footer {

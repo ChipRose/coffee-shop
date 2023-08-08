@@ -25,7 +25,7 @@
   .filter {
     display: grid;
     grid-template-rows: repeat(2, min-content);
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 40px;
     column-gap: 30px;
   }

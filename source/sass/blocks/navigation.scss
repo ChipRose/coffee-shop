@@ -125,6 +125,10 @@
     display: none;
   }
 
+  .navigation__menu {
+    flex: 1 1 auto;
+  }
+
   .navigation__user-menu {
     flex: 0 0 auto;
   }

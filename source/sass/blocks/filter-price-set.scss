@@ -4,4 +4,8 @@
 
 .filter-price-set__range-slider {
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+  }
 }

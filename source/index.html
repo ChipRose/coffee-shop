@@ -381,8 +381,8 @@
             </div>
           </form>
           <div class="products__view-block">
-            <div class="sort products__sort">
-              <label class="sort-item">
+            <div class="products__sort">
+              <label class="sort-item products__sort-item">
                 <span class="sort-item__select">
                   <select class="sort-item__field">
                     <option class="sort-item__option" value="default">по умолчанию</option>
@@ -607,7 +607,8 @@
             <div class="pagination products__pagination">
               <ul class="pagination-list">
                 <li class="pagination-list__item">
-                  <button class="pagination-button" aria-label="Переход на предыдущую страницу" type="button">
+                  <button class="pagination-button pagination-button--control"
+                    aria-label="Переход на предыдущую страницу" type="button">
                     <svg class="pagination-button__icon" width="6" height="10" role="img" focusable="false">
                       <use xlink:href="img/icons/stack.svg#arrow-prev" />
                     </svg>
@@ -627,7 +628,8 @@
                   <a class="pagination-button" href="#" aria-label="Переход на страницу 3">3</a>
                 </li>
                 <li class="pagination-list__item">
-                  <button class="pagination-button" aria-label="Переход на следущую страницу" type="button">
+                  <button class="pagination-button pagination-button--control" aria-label="Переход на следущую страницу"
+                    type="button">
                     <svg class="pagination-button__icon" width="6" height="10" role="img" focusable="false">
                       <use xlink:href="img/icons/stack.svg#arrow-next" />
                     </svg>
@@ -660,7 +662,7 @@
         <div class="footer-logo social__logo-block">
           <div class="footer-logo__image-block">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/logo/logo-full.svg">
+              <source media="(min-width: 768px)" srcset="img/logo/logo-full.svg">
               <img class="img" src="img/logo/logo-medium.svg" alt="Логотип Drink2Go">
             </picture>
           </div>

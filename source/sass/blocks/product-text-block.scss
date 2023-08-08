@@ -1,5 +1,9 @@
 .product-text-block__title {
   margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .product-text-block__title a {

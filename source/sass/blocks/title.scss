@@ -11,6 +11,7 @@
 
     @media (min-width: $tablet-width) {
       @include set-font-style(var(--fz-title-subsection-big), var(--lh-title-subsection-big), var(--fw-bold));
+      letter-spacing: 0.02em;
     }
 
     @media (min-width: $desktop-width) {

@@ -1,6 +1,11 @@
 .products__container {
   padding-top: 50px;
   padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
 }
 
 .products__badge {
@@ -13,18 +18,36 @@
 
 .products__filter {
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .products__sort {
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 26px;
   }
 }
 
+.products__sort-item {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+}
+
 .products__catalog {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .products__pagination {
