@@ -1,7 +1,7 @@
 const slider = document.querySelector('#price-range-slider');
 
 noUiSlider.create(slider, {
-  start: [20, 80],
+  start: [0, 85],
   connect: true,
   range: {
     'min': 0,

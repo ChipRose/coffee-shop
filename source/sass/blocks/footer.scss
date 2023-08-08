@@ -1,3 +1,22 @@
-.footer__item {
-  border-bottom: 1px solid var(--cl-base-secondary);
+@media (min-width: $desktop-width) {
+  .footer {
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: min-content 1fr;
+  }
+
+  .footer__social{
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .footer__navigation{
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .footer__copyright{
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
 }

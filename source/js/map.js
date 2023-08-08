@@ -11,7 +11,9 @@ const MarkerSize = {
 
 const mapCanvas = document.querySelector('#map-canvas');
 
-mapCanvas.innerHTML = '<div id="map-inner" style="width: 100%; height: 100%;"></div>';
+if (mapCanvas){
+  mapCanvas.innerHTML = '<div id="map-inner" style="width: 100%; height: 100%;"></div>';
+}
 
 const map = L
   .map('map-inner', {

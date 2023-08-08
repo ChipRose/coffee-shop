@@ -17,6 +17,7 @@
   display: none;
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
     display: block;
 
     @include set-font-style(var(--fz-small-text), var(--lh-small-text));

@@ -1,6 +1,33 @@
 .footer-navigation__container {
+  @media (min-width: $tablet-width) {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.footer-navigation__item {
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      right: -20px;
+      bottom: 0;
+      border-bottom: 1px solid var(--cl-base-secondary);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 1 1 30%;
+  }
 }
 
 .footer-navigation__title {

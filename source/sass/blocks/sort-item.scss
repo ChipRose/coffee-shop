@@ -25,7 +25,7 @@
 
 .sort-item__field {
   padding: 4px 30px 4px 10px;
-  max-width: fit-content;
+  max-width: 165px;
   appearance: none;
   @include set-font-style(var(--fz-regular-text-big), var(--lh-regular-text-big), var(--fw-semi-bold));
   background: none;

@@ -4,9 +4,10 @@
 
 .radio-item__label {
   position: relative;
-  padding-left: 34px;
+  padding-left: 38px;
   display: flex;
   align-items: center;
+  letter-spacing: 0.1em;
   cursor: pointer;
 
   &::before,

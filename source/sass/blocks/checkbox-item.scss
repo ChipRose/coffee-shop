@@ -4,9 +4,10 @@
 
 .checkbox-item__label {
   position: relative;
-  padding-left: 52px;
+  padding-left: 56px;
   display: flex;
   align-items: center;
+  letter-spacing: 0.1em;
   cursor: pointer;
 
   &::before,
