@@ -14,7 +14,52 @@
   margin-bottom: 20px;
   min-width: 100%;
 
-  &:last-child {
+  @media (max-width:$mobile-width-only) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+  .filter {
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: repeat(3, auto);
+    row-gap: 40px;
+    column-gap: 30px;
+  }
+
+  .filter__price {
     margin-bottom: 0;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .filter__product-content {
+    margin-bottom: 0;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .filter__country {
+    margin-bottom: 0;
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+
+  .filter__buttons-block {
+    margin: -10px;
+    grid-row: 2/3;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .filter__button {
+    margin: 10px;
+    min-width: auto;
   }
 }

@@ -5,6 +5,14 @@
 .features__container {
   padding-top: 50px;
   padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 30px 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 40px 120px;
+  }
 }
 
 .features__badge {

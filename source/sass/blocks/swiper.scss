@@ -4,13 +4,18 @@
 }
 
 .swiper .swiper-pagination > .swiper-pagination-bullet {
-  width: 20px;
-  height: 2px;
+  margin: 10px 4px;
+  width: 62px;
+  height: 4px;
   border-radius: 0;
   opacity: 1;
-  background-color: red;
+  background: var(--cl-base-contrast);
 }
 
 .swiper .swiper-pagination > .swiper-pagination-bullet-active {
-  background-color: green;
+  background: var(--cl-base-primary);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets {
+  bottom: 60px;
 }

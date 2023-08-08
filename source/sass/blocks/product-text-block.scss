@@ -7,5 +7,10 @@
 }
 
 .product-text-block__description {
+  margin-bottom: var(--el-extra-indent);
   @include set-font-style(var(--fz-small-text), var(--lh-small-text));
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

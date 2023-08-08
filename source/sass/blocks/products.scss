@@ -17,8 +17,32 @@
 
 .products__sort {
   margin-bottom: 16px;
+
+  @media (min-width:$desktop-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .products__catalog {
   margin-bottom: 40px;
+}
+
+.products__pagination {
+  width: fit-content;
+  margin: 0 auto; 
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .products__wrapper{
+    display: flex;
+  }
+
+  .products__filter{
+    flex: 0 0 318px;
+  }
 }

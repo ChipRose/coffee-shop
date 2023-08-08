@@ -1,0 +1,7 @@
+.title-card {
+  @include set-font-style(var(--fz-title-section-small), var(--lh-title-section-small), var(--fw-bold));
+
+  @media (min-width: $tablet-width) {
+    @include set-font-style(var(--fz-title-section-big), var(--lh-title-section-big), var(--fw-bold));
+  }
+}

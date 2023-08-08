@@ -1,9 +1,24 @@
+.catalog-list {
+  @media (min-width: $tablet-width) {
+    margin: -15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
 .catalog-list__item {
   margin-right: auto;
   margin-bottom: 20px;
   margin-left: auto;
 
-  &:last-child {
-    margin-bottom: 0;
+  @media (max-width: $mobile-width-only) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 15px;
   }
 }

@@ -1,4 +1,4 @@
-const slider = document.getElementById('price-range-slider');
+const slider = document.querySelector('#price-range-slider');
 
 noUiSlider.create(slider, {
   start: [20, 80],

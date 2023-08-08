@@ -1,5 +1,5 @@
 .product-card {
-  padding: var(--el-main-indent);
+  padding: 40px var(--el-main-indent) var(--el-main-indent);
   width: 280px;
   min-height: 420px;
   display: flex;
@@ -8,7 +8,16 @@
   background: var(--cl-base-contrast);
   border-radius: var(--el-border-radius);
 
+  @media (min-width: $tablet-width) {
+    padding: 50px 30px 30px;
+    width: 349px;
+    min-height: 440px;
+  }
+
   @media (min-width: $desktop-width) {
+    width: 317px;
+    min-height: 460px;
+
     &:hover,
     &:focus {
       box-shadow: var(--el-main-shadow);
@@ -39,4 +48,5 @@
 
 .product-card__price-block {
   min-width: 100%;
+  justify-content: space-between;
 }

@@ -4,7 +4,8 @@
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    align-items: flex-start;
     flex-direction: row;
   }
 }
@@ -13,7 +14,7 @@
   margin-bottom: 10px;
   width: 52px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     margin-right: 20px;
     margin-bottom: 0;
   }
@@ -31,18 +32,24 @@
 
 .feature-card__title {
   margin-bottom: 4px;
-  @include set-font-style(var(--fz-title-section-small), var(--lh-title-section-small), var(--fw-bold));
 
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
-    @include set-font-style(var(--fz-title-section-big), var(--lh-title-section-big), var(--fw-bold));
   }
 }
 
 .feature-card__text-block {
   text-align: center;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     text-align: left;
+  }
+}
+
+.feature-card__text {
+  margin-bottom: var(--el-extra-indent);
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }

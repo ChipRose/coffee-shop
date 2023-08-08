@@ -19,7 +19,12 @@
 }
 
 .slide-text-block__description {
+  margin-bottom: var(--el-extra-indent);
   @include set-font-style(var(--fz-slide-description-small), var(--lh-slide-description-small));
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
     @include set-font-style(var(--fz-slide-description-big), var(--lh-slide-description-big));
