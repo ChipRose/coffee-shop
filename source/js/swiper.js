@@ -1,5 +1,4 @@
-
-new Swiper('#swiper', {
+const sliderProps = {
   pagination: {
     el: '.swiper-pagination',
   },
@@ -8,4 +7,6 @@ new Swiper('#swiper', {
     nextEl: '#slider-button-next',
     prevEl: '#slider-button-prev',
   },
-});
+}
+
+new Swiper('#swiper', sliderProps);

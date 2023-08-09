@@ -45,18 +45,18 @@
           <span class="visually-hidden">Открыть меню </span>
           <span class="navigation__burger"></span>
         </button>
-        <ul class="navigation-menu navigation__menu">
+        <ul class="navigation-menu navigation__menu" id="navigation-list">
           <li class="navigation-menu__item navigation-menu__item--current">
             <a href="#">Главная</a>
           </li>
           <li class="navigation-menu__item">
-            <a href="#catalog">Каталог</a>
+            <a href="#">Каталог</a>
           </li>
           <li class="navigation-menu__item">
-            <a href="#delivery">Доставка</a>
+            <a href="#">Доставка</a>
           </li>
           <li class="navigation-menu__item">
-            <a href="#about">О нас</a>
+            <a href="#">О нас</a>
           </li>
         </ul>
         <ul class="user-menu navigation__user-menu" id="user-menu-list">
@@ -605,35 +605,35 @@
               </ul>
             </div>
             <div class="pagination products__pagination">
-              <ul class="pagination-list">
+              <ul class="pagination-list" id="pagination-list">
                 <li class="pagination-list__item">
-                  <button class="pagination-button pagination-button--control"
-                    aria-label="Переход на предыдущую страницу" type="button">
-                    <svg class="pagination-button__icon" width="6" height="10" role="img" focusable="false">
+                  <button class="button-pagination button-pagination--control"
+                    aria-label="Переход на предыдущую страницу" type="button" id="pagination-back">
+                    <svg class="button-pagination__icon" width="6" height="10" role="img" focusable="false">
                       <use xlink:href="img/icons/stack.svg#arrow-prev" />
                     </svg>
-                    <span class="pagination-button__label">
+                    <span class="button-pagination__label">
                       Назад
                     </span>
                   </button>
                 </li>
                 <li class="pagination-list__item">
-                  <a class="pagination-button pagination-button--current" href="#"
-                    aria-label="Переход на страницу 1">1</a>
+                  <a class="button-pagination" href="#" aria-label="Переход на страницу 1">1</a>
                 </li>
                 <li class="pagination-list__item">
-                  <a class="pagination-button pagination-list__button" href="#" aria-label="Переход на страницу 2">2</a>
+                  <a class="button-pagination" href="#" aria-label="Переход на страницу 2">2</a>
                 </li>
                 <li class="pagination-list__item">
-                  <a class="pagination-button" href="#" aria-label="Переход на страницу 3">3</a>
+                  <a class="button-pagination button-pagination--current" href="#"
+                    aria-label="Переход на страницу 3">3</a>
                 </li>
                 <li class="pagination-list__item">
-                  <button class="pagination-button pagination-button--control" aria-label="Переход на следущую страницу"
-                    type="button">
-                    <svg class="pagination-button__icon" width="6" height="10" role="img" focusable="false">
+                  <button class="button-pagination button-pagination--control" aria-label="Переход на следущую страницу"
+                    type="button" id="pagination-forward">
+                    <svg class="button-pagination__icon" width="6" height="10" role="img" focusable="false">
                       <use xlink:href="img/icons/stack.svg#arrow-next" />
                     </svg>
-                    <span class="pagination-button__label">
+                    <span class="button-pagination__label">
                       Вперёд
                     </span>
                   </button>
@@ -793,6 +793,7 @@
   <script src="./js/swiper.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/map.js"></script>
+  <script src="./js/pagination.js"></script>
 
 </body>
 
