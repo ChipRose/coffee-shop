@@ -1,4 +1,9 @@
 .copyright__container {
   padding-top: 22px;
   padding-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 13px;
+    padding-bottom: 30px;
+  }
 }

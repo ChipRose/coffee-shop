@@ -73,6 +73,13 @@
   object-fit: contain;
 }
 
+.slide__info {
+  @media (min-width: $desktop-width) {
+    padding-top: 150px;
+    align-self: flex-start;
+  }
+}
+
 .slide__text-block {
   flex: 1 1 auto;
   margin-bottom: var(--el-main-indent);

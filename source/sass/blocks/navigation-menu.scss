@@ -4,6 +4,10 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: -10px;
+  }
 }
 
 .navigation-menu__item {
@@ -18,6 +22,10 @@
     &:first-child {
       border-top: 1px solid var(--cl-base-secondary);
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 10px;
   }
 
   &--current {

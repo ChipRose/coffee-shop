@@ -1,5 +1,16 @@
 .user-menu {
   display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    margin: -8px;
+  }
+}
+
+.user-menu__item {
+  @media (min-width: $desktop-width) {
+    margin: 8px;
+  }
 }
 
 .user-menu__icon {

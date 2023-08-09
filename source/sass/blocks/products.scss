@@ -6,6 +6,11 @@
     padding-top: 80px;
     padding-bottom: 90px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
 }
 
 .products__badge {
@@ -14,6 +19,10 @@
 
 .products__title {
   margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .products__filter {
@@ -48,6 +57,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .products__pagination {
@@ -66,6 +79,7 @@
   }
 
   .products__filter {
-    flex: 0 0 318px;
+    padding-right: 27px;
+    flex: 0 0 345px;
   }
 }

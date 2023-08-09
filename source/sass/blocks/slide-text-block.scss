@@ -16,6 +16,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .slide-text-block__description {

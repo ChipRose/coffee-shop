@@ -133,3 +133,9 @@
     flex: 0 0 auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .navigation__user-menu {
+    flex: 0 1 fit-content;
+  }
+}

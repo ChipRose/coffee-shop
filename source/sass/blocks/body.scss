@@ -24,6 +24,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 19px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .body__footer {
