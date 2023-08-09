@@ -2,7 +2,7 @@
 The project was realized at the grading stage in HTML Academy.
 
 Student: Yana Rozova.
-Time to develop: __ hours.
+Time to develop: 46 hours.
 
 ## RUN COMMAND:
 - **npm install** - to install dependencies;

@@ -19,7 +19,8 @@
     min-height: 460px;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:focus-within {
       box-shadow: var(--el-main-shadow);
     }
   }
